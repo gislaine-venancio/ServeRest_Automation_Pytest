@@ -74,7 +74,7 @@ venv\Scripts\activate           # Windows
 pip install -r requirements.txt
 ```
 
-![Installing Dependencies](images/Installing_required_files.jpg)
+![Installing Dependencies](Images/Installing_required_files.jpg)
 
 ### 4. Run all tests
 ```bash
@@ -98,19 +98,19 @@ pytest tests/test_produtos.py
 
 ### Terminal Output — 37 passed, 0 failed
 
-![Test Results Terminal](images/test_serverest_API_pytest.jpg)
+![Test Results Terminal](Images/test_serverest_API_pytest.jpg)
 
 ---
 
 ### Generating HTML Report
 
-![Generating HTML Report](images/Generating_HTML_report.jpg)
+![Generating HTML Report](Images/Generating_HTML_report.jpg)
 
 ---
 
 ### HTML Report — pytest-html
 
-![HTML Report](images/report_HTML.jpg)
+![HTML Report](Images/report_HTML.jpg)
 
 > **37 tests — 0 Failed — 0 Errors — completed in 47s**
 
