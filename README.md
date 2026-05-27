@@ -4,10 +4,26 @@
 ![Pytest](https://img.shields.io/badge/Pytest-7.4-green?style=for-the-badge&logo=pytest)
 ![API](https://img.shields.io/badge/API-REST-orange?style=for-the-badge)
 ![Tests](https://img.shields.io/badge/Tests-37%20Passed-success?style=for-the-badge)
+![Coverage](https://img.shields.io/badge/Coverage-4%20Modules-blue?style=for-the-badge)
+![Duration](https://img.shields.io/badge/Duration-47s-lightgrey?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 
 Automated API test suite for the [ServeRest](https://serverest.dev) REST API, built with Python and Pytest.
 ServeRest simulates a virtual store and is widely used for API testing practice.
+
+---
+
+## 📊 Project Summary
+
+| Item | Result |
+|---|---|
+| Total Automated Tests | 37 |
+| Modules Covered | 4 (Login, Users, Products, Carts) |
+| Test Failures | 0 |
+| Test Types | Positive & Negative scenarios |
+| Execution Time | 47 seconds |
+| Report Format | HTML (pytest-html) |
+| Status | Active |
 
 ---
 
@@ -20,6 +36,15 @@ This project demonstrates automated API testing across all ServeRest endpoints, 
 - ✅ Token-based authentication with session fixtures
 - ✅ Unique data generation to avoid conflicts in shared environments
 - ✅ HTML report generation with pytest-html
+
+---
+
+## 🧠 Key Technical Decisions
+
+- **Session fixtures** — token generated once per session and reused across all tests, avoiding repeated login calls and improving overall performance
+- **UUID data generation** — prevents conflicts in the shared ServeRest environment where multiple users test simultaneously, ensuring test isolation and repeatability
+- **Modular structure** — one test file per endpoint for easier maintenance, clearer coverage visibility, and independent execution per module
+- **Positive & negative scenarios** — every module covers both happy path and edge cases (missing fields, invalid IDs, duplicate data, unauthorised access)
 
 ---
 
@@ -125,15 +150,6 @@ pytest tests/test_produtos.py
 | Requests | HTTP client for API calls |
 | pytest-html | HTML report generation |
 | Git / GitHub | Version control |
-
----
-
-## 💡 Key Features
-
-- **Session fixtures** — token generated once and reused across all tests
-- **Unique data generation** — `uuid` used to avoid conflicts in the shared API environment
-- **Organised by module** — each endpoint has its own test file
-- **Covers edge cases** — missing fields, invalid IDs, duplicate data, unauthorised access
 
 ---
 
